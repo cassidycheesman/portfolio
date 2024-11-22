@@ -3,11 +3,11 @@
 
 <template>
   <div class = "nav">
-  <b-button  variant="outline-*" class = "title">Cassidy Cheesman.</b-button>
+  <b-button  variant="outline-*" class = "title">Cassidy Cheesman<span class="title-period">.</span></b-button>
   <div class = "tabs">
-    <b-button variant="outline-*">Projects</b-button>
-    <b-button variant="outline-*">Research</b-button>
-    <b-button variant="outline-*">About</b-button>
+    <b-button  class = "tabbutton" variant="outline-*">Projects</b-button>
+    <b-button class = "tabbutton" variant="outline-*">Research</b-button>
+    <b-button class = "tabbutton" variant="outline-*">About</b-button>
   </div>
 </div>
 
@@ -23,10 +23,14 @@
 }
 
 .title {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   margin-right: 2rem; /* Add margin to move tabs to the left */
   padding-left: 7vw;
+}
+
+.title-period {
+  color: rgb(44, 118, 192); /* Change this to the desired color */
 }
 
 .tabs {
@@ -35,12 +39,11 @@
   gap: 1.5rem; /* Increase the gap to increase spacing between items */
 }
 
-.tabs .b-button {
-  font-family: Arial, sans-serif;
-  font-size: 2rem;
+.tabbutton {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25rem;
+  text-decoration: underline;
+  text-decoration-color: rgb(44, 118, 192);
 }
 
-.tabs .b-button:hover {
-  text-decoration: underline;
-}
 </style>
