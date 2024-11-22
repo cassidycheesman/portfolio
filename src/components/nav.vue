@@ -40,7 +40,7 @@
 }
 
 .tabbutton {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   font-size: 1.25rem;
   text-decoration: underline;
   text-decoration-color: rgb(44, 118, 192);
