@@ -5,9 +5,10 @@
   <div class = "nav">
   <b-button  variant="outline-*" class = "title">Cassidy Cheesman<span class="title-period">.</span></b-button>
   <div class = "tabs">
-    <b-button  class = "tabbutton" variant="outline-*">Projects</b-button>
-    <b-button class = "tabbutton" variant="outline-*">Research</b-button>
-    <b-button class = "tabbutton" variant="outline-*">About</b-button>
+    <b-button  class = "tabbutton" variant="outline-*" :to="{ path: '/'}">Home</b-button>
+    <b-button  class = "tabbutton" variant="outline-*" :to="{ path: '/projects'}">Projects</b-button>
+    <b-button class = "tabbutton" variant="outline-*" :to="{ path: '/research'}">Research</b-button>
+    <b-button class = "tabbutton" variant="outline-*" :to="{ path: '/about'}">About</b-button>
   </div>
 </div>
 

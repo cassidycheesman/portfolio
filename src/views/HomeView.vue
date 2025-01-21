@@ -59,7 +59,7 @@ import FootBar from '@/components/footer.vue'
           minds together and create something amazing.
         </p>
       </div>
-      <img class="portrait" src="/images/portrait.jpg" alt="A photo of Cassidy Cheesman">
+      <img class="portrait" :img-src="`${baseDir}images/portrait.jpg`" alt="A photo of Cassidy Cheesman">
     </div>
 
     <div class="favproj">
@@ -73,13 +73,13 @@ import FootBar from '@/components/footer.vue'
       </div>
       <div class="carousel">
         <BCarousel :interval="slideInterval" controls indicators ride="carousel" class="projcarousel">
-          <BCarouselSlide img-src="/images/littleman1.png">
+          <BCarouselSlide :img-src="`${baseDir}images/littleman1.png`">
             <h1 class = "carousel-heading">Running Automaton</h1>
           </BCarouselSlide>
-          <BCarouselSlide img-src="/images/cmachine.jpg">
+          <BCarouselSlide :img-src="`${baseDir}images/cmachine.jpg`">
             <h1 class = "carousel-heading">Automated Cocktail Machine</h1>
           </BCarouselSlide>
-          <BCarouselSlide img-src="/images/prisonerexpress.png">
+          <BCarouselSlide :img-src="`${baseDir}images/prisonerexpress.png`">
             <h1 class = "carousel-heading2">Prisoner Express PWA</h1>
           </BCarouselSlide>
         </BCarousel>
