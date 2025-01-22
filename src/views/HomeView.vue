@@ -59,7 +59,7 @@ import FootBar from '@/components/footer.vue'
           minds together and create something amazing.
         </p>
       </div>
-      <img class="portrait" :img-src="`${baseDir}images/portrait.jpg`" alt="A photo of Cassidy Cheesman">
+      <img :src="`${baseDir}images/portrait.jpg`" class="portrait">
     </div>
 
     <div class="favproj">
